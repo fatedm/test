@@ -72,8 +72,8 @@ KISSY.add('timeline', function(S, Base, D, E, Anim){
                 config = self.config,
                 container = self.container,
                 max = config.width,
-                trigger = D.get('.timeline-trigger', container),
-                cx, cy,
+                trigger = self.trigger = D.get('.timeline-trigger', container),
+                cx,
                 draging = false;
 
 
@@ -96,17 +96,32 @@ KISSY.add('timeline', function(S, Base, D, E, Anim){
                     }
                 });
 
-                E.on(document, 'mouseup mouseleave', function(e){
+                E.on(document, 'mouseup', function(e){
                     e.preventDefault();
                     console.log('mouseup');
                     draging = false;
-                    self.fire('change', {});
+                    self._change();
                     E.detach(document, 'mousemove');
                     E.detach(document, 'mouseup');
                     E.detach(document, 'mouseleave');
                 });
             });
 
+
+        },
+        _change: function() {
+            var self = this,
+                x = self.x,
+                width = self.config.width,
+                per = self.per,
+                cur = Math.ceil(x / per),
+                curX = per * cur;
+
+            self.x = curX;
+
+            D.css(self.trigger, {left: curX + 'px'});
+
+            self.fire('change', {index: cur});
 
         }
     });
@@ -121,8 +136,11 @@ KISSY.add('timeline', function(S, Base, D, E, Anim){
     ]
 });
 KISSY.use('timeline', function(S, Timeline){
-    new Timeline({
+    var time = new Timeline({
         container: '.timeline',
-        amount: 30
+        amount: 20
+    });
+    time.on('change', function(e){
+        console.log('index=' + e.index);
     });
 });

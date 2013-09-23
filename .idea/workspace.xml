@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57b2b40f-cead-45d5-9e6f-38be3fd87aed" name="Default" comment="" />
+    <list default="true" id="57b2b40f-cead-45d5-9e6f-38be3fd87aed" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1.js" afterPath="$PROJECT_DIR$/1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/1.html" changelist="57b2b40f-cead-45d5-9e6f-38be3fd87aed" time="1379919196863" ignored="false" />
-    <file path="/1.js" changelist="57b2b40f-cead-45d5-9e6f-38be3fd87aed" time="1379935495586" ignored="false" />
+    <file path="/1.js" changelist="57b2b40f-cead-45d5-9e6f-38be3fd87aed" time="1379936442131" ignored="false" />
     <file path="/1.css" changelist="57b2b40f-cead-45d5-9e6f-38be3fd87aed" time="1379934804802" ignored="false" />
+    <file path="/Dummy.txt" changelist="57b2b40f-cead-45d5-9e6f-38be3fd87aed" time="1379935850402" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +37,7 @@
           <file leaf-file-name="1.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/1.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="20" column="25" selection-start="586" selection-end="586" vertical-scroll-proportion="0.6508135">
+                <state line="20" column="25" selection-start="586" selection-end="586" vertical-scroll-proportion="0.6524467">
                   <folding />
                 </state>
               </provider>
@@ -41,13 +47,25 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="1.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="1.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/1.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="94" column="41" selection-start="2728" selection-end="2732" vertical-scroll-proportion="0.53571427">
+                <state line="98" column="39" selection-start="2843" selection-end="2843" vertical-scroll-proportion="0.0">
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
-                    <marker date="1379935520537" expanded="true" signature="1450:1455" placeholder="..." />
+                    <marker date="1379936564959" expanded="true" signature="1450:1455" placeholder="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="2.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/2.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="198" column="3" selection-start="5903" selection-end="5903" vertical-scroll-proportion="0.95272726">
+                  <folding>
+                    <marker date="1379936696731" expanded="false" signature="1362:1368" placeholder="..." />
+                    <marker date="1379936696731" expanded="false" signature="1419:1457" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -73,6 +91,12 @@
   </component>
   <component name="Git.Settings">
     <option name="SYNC_SETTING" value="DONT" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -80,6 +104,7 @@
         <option value="$PROJECT_DIR$/1.html" />
         <option value="$PROJECT_DIR$/1.css" />
         <option value="$PROJECT_DIR$/1.js" />
+        <option value="$PROJECT_DIR$/2.js" />
       </list>
     </option>
   </component>
@@ -136,7 +161,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -188,7 +213,7 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../apps" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
@@ -345,7 +370,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="25" selection-start="586" selection-end="586" vertical-scroll-proportion="0.6508135">
+        <state line="20" column="25" selection-start="586" selection-end="586" vertical-scroll-proportion="0.6524467">
           <folding />
         </state>
       </provider>
@@ -359,10 +384,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="41" selection-start="2728" selection-end="2732" vertical-scroll-proportion="0.53571427">
+        <state line="98" column="39" selection-start="2843" selection-end="2843" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <marker date="1379935520537" expanded="true" signature="1450:1455" placeholder="..." />
+            <marker date="1379936564959" expanded="true" signature="1450:1455" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="198" column="3" selection-start="5903" selection-end="5903" vertical-scroll-proportion="0.95272726">
+          <folding>
+            <marker date="1379936696731" expanded="false" signature="1362:1368" placeholder="..." />
+            <marker date="1379936696731" expanded="false" signature="1419:1457" placeholder="..." />
           </folding>
         </state>
       </provider>
