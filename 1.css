@@ -1,0 +1,64 @@
+/*common*/
+div, p, body {
+    margin: 0;
+    padding: 0;
+}
+/*style*/
+#content {
+    width: 1000px;
+    margin: 20px auto;
+
+}
+.timeline {
+    height: 18px;
+    width: 800px;
+    position: relative;
+}
+.timeline .timeline-mark {
+    width: 100%;
+    height: 100%;
+}
+.timeline .timeline-mark i {
+    width: 100%;
+    height: 9px;
+    border-bottom: 1px solid #f60;
+    line-height: 9px;
+    font-size: 0;
+    display: block;
+}
+.timeline-mark s {
+    position: absolute;
+    top: 3px;
+    width: 1px;
+    height: 6px;
+    display: block;
+    background-color: green;
+}
+.timeline-mark s span {
+    position: absolute;
+    top: 6px;
+    left: -1px;
+    font: 12px/18px Arail, Tahoma;
+    color: #666;
+    -webkit-user-select: none;
+}
+.timeline-mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.timeline-trigger {
+    display: block;
+    width: 13px;
+    height: 18px;
+    background: url('images/thumb-x.png') no-repeat 0 -12px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+

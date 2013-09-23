@@ -1,0 +1,1 @@
+function logName(){console.log(name)}var name="test";logName();
