@@ -66,7 +66,7 @@ KISSY.add('timeline', function(S, Base, D, E, Anim){
             this._bindEvent();
         },
 
-        //绑定滚动事件
+        //绑定事件
         _bindEvent: function() {
             var self = this,
                 config = self.config,
@@ -74,17 +74,17 @@ KISSY.add('timeline', function(S, Base, D, E, Anim){
                 max = config.width,
                 trigger = self.trigger = D.get('.timeline-trigger', container),
                 cx,
-                draging = false;
+                dragging = false;
 
 
             E.on(trigger, 'mousedown', function(e){
 //                D.attr(trigger, 'draging', 'true');
 
                 cx = e.clientX;
-                draging = true;
+                //dragging = true;
                 E.on(document, 'mousemove', function(e){
                     e.preventDefault();
-                    if (draging /*&& D.attr(trigger, 'draging')*/) {
+                    //if (dragging /*&& D.attr(trigger, 'draging')*/) {
                         var _x = e.clientX - cx,
                             x = Math.min(max, Math.max(0, self.x + _x));
 
@@ -93,17 +93,18 @@ KISSY.add('timeline', function(S, Base, D, E, Anim){
 
                         D.css(trigger, {left: self.x + 'px'});
                         console.log('this.x = ' + self.x);
-                    }
+                    //}
                 });
 
-                E.on(document, 'mouseup', function(e){
+                E.on(document, 'mouseup mouseleave', function(e){
                     e.preventDefault();
                     console.log('mouseup');
-                    draging = false;
-                    self._change();
                     E.detach(document, 'mousemove');
                     E.detach(document, 'mouseup');
                     E.detach(document, 'mouseleave');
+                    dragging = false;
+                    self._change();
+
                 });
             });
 
@@ -114,7 +115,7 @@ KISSY.add('timeline', function(S, Base, D, E, Anim){
                 x = self.x,
                 width = self.config.width,
                 per = self.per,
-                cur = Math.ceil(x / per),
+                cur = Math.round(x / per),
                 curX = per * cur;
 
             self.x = curX;
